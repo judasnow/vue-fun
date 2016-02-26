@@ -7,7 +7,7 @@ import {
 export const todosInitialState = []
 
 export const todosMutations = {
-    [TODO_GET_LIST](state) {
-
+    [TODO_GET_LIST](state, pageNum) {
+		console.dir('TODO_GET_LIST')
     }
 }

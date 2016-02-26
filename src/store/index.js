@@ -4,7 +4,6 @@ import Vuex from 'vuex'
 import * as actions from './actions'
 import { todosMutations, todosInitialState } from './modules/todos'
 
-
 Vue.use(Vuex)
 Vue.config.debug = true
 
