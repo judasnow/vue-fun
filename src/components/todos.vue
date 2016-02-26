@@ -18,13 +18,8 @@ import store from '../store'
 const { getTodosList } = store.actions
 
 export default {
-    data() {
-        return {
-
-		}
-    },
 	computed: {
-		count() {
+		total() {
 			return store.state.todos.length
 		}
 	},
