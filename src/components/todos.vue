@@ -1,8 +1,8 @@
 <template>
-<h5>todos</h5>
+<h5>todos ({{ total }})</h5>
 <ul>
     <li>
-        <span>{{ content }}</span>
+        <span>content</span>
         <input type="checkbox">
     </li>
 </ul>
@@ -19,7 +19,9 @@ const { getTodosList } = store.actions
 
 export default {
     data() {
-        return {}
+        return {
+
+		}
     },
 	computed: {
 		count() {
