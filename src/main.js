@@ -1,8 +1,15 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
 import app from './components/app.vue'
 
-
-new Vue({
-  el: 'body',
-  components: { app }
+var App = Vue.extend({})
+var router = new VueRouter()
+router.map({
+    '/app': {
+        component: app
+    }
 })
+router.start(App, '#app')
