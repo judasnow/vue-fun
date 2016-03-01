@@ -1,3 +1,7 @@
+/**
+ * 在这里初始化 Vue.Store
+ */
+
 import Vue from 'vue'
 import Vuex from 'vuex'
 
