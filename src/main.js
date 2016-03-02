@@ -9,10 +9,18 @@ import ActivityPage from './page/activity.vue'
 import ActivitiesPage from './page/activities.vue'
 import TeamPage from './page/team.vue'
 
+import store from './vuex/store'
+
 
 Vue.use(VueRouter)
 
-var App = Vue.extend({})
+var App = Vue.extend({
+  store,
+  components: {
+
+  }
+})
+
 var router = new VueRouter()
 router.map({
   '/activities': {
