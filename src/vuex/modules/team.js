@@ -4,14 +4,10 @@
  * 相应概念的 init state and mutations
  */
 
-import {
-  GET_TEAM
-} from '../mutations-types'
+import { GET_TEAM } from '../mutations-types'
+import Team from '../../model/team'
 
-const state = {
-  name: 'defaule name',
-  desc: 'default desc'
-}
+const state = new Team()
 
 const mutations = {
   [GET_TEAM] (state, team) {

@@ -14,9 +14,10 @@ import * as types from './mutations-types'
 export const getTeam = function({ dispatch }, id) {
   teamApi.getTeam(
     id=1,
-  function(team) {
-    dispatch(types.GET_TEAM, team)
-  }, function() {
-    console.dir (fail)
-  })
+    function(team) {
+      dispatch(types.GET_TEAM, team)
+    },
+    function() {
+      console.dir (fail)
+    })
 }
