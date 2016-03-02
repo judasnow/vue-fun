@@ -2,7 +2,8 @@
 <article class="weui_article">
 	<h1>{{ name }}</h1>
 	<section>
-		<h2 class="title">{{ desc }}</h2>
+	  <h2 class="title">{{ desc }}</h2>
+	  <toast v-show="true">购买成功</toast>
 	<section>
 </article>
 </template>
@@ -13,8 +14,12 @@
 
 <script>
 import { getTeam } from '../vuex/actions'
+import { Toast } from 'vue-weui'
 
 export default {
+  components: {
+  	toast: Toast
+  },
   // 注入了 vuex 相关的对象
   vuex: {
     state: {
@@ -28,7 +33,7 @@ export default {
     actions: {
       getTeam
     }
-	},
+  },
   created: function() {
     this.getTeam(1)
   }
