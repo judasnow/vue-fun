@@ -1,9 +1,9 @@
-import todoApi from '../api/todo'
+'use strict'
+
+/**
+ * 统一定义系统中所有的 action
+ * 这里是 api 和 mutation 连接的地方
+ */
+
+// import todoApi from '../api/todo'
 import * as types from './mutations-types'
-
-
-// action 为啥不写到 module 中？
-// 因为 action 相对来说是外部接口？
-export const getTodosList = (store) => {
-	store.dispatch(types.TODO_GET_LIST)
-}

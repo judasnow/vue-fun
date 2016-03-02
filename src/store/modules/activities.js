@@ -6,6 +6,7 @@
  * 在这个模块中需要定义 mutation 以及 初始状态
  */
 
+
 import {
   GET_ACTIVITIES,
   GET_ACTIVITY
@@ -16,7 +17,8 @@ export const activitiesInitialState = {
   activities: []
 }
 
-// 同步的修改 state
+
+// 同步修改 state
 export const activitiesMutations = {
   [GET_ACTIVITIES](state, newActivities) {
 
