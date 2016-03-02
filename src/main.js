@@ -11,15 +11,18 @@ import TeamPage from './page/team.vue'
 
 import store from './vuex/store'
 
-
 Vue.use(VueRouter)
 
+
+// top app
 var App = Vue.extend({
+  // inject store to all children
   store,
   components: {
 
   }
 })
+
 
 var router = new VueRouter()
 router.map({

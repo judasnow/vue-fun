@@ -12,18 +12,24 @@ import {
   GET_ACTIVITY
 } from '../mutations-types'
 
-export const activitiesInitialState = {
+
+const state = {
   // FIXME 这里能定义成一个类型应该更好
   activities: []
 }
 
 
 // 同步修改 state
-export const activitiesMutations = {
+const mutations = {
   [GET_ACTIVITIES](state, newActivities) {
 
   },
   [GET_ACTIVITY](state) {
 
   }
+}
+
+export default {
+  state,
+  mutations
 }
